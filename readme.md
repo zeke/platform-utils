@@ -60,7 +60,7 @@ npm test
 
 ## Dev Dependencies
 
-- [buble](git+https://gitlab.com/Rich-Harris/buble.git): The blazing fast, batteries-included ES2015 compiler
+- [buble](https://gitlab.com/Rich-Harris/buble): The blazing fast, batteries-included ES2015 compiler
 - [chai](https://github.com/chaijs/chai): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
 - [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
 - [random-useragent](https://github.com/skratchdot/random-useragent): Get a random useragent (with an optional filter)
