@@ -6,17 +6,23 @@ function getPlatformFromFilename (filename) {
   var ext = parts[parts.length - 1]
 
   if (ext === 'exe') { return 'win32' }
+  if (ext === 'zip' && parts.includes('win32')) { return 'win32' }
+  if (ext === 'zip' && parts.includes('windows')) { return 'win32' }
+  if (ext === 'zip' && parts.includes('win')) { return 'win32' }
+  if (ext === 'zip' && parts.includes('ia32')) { return 'win32' }
 
   if (ext === 'dmg') { return 'darwin' }
   if (ext === 'pkg') { return 'darwin' }
   if (ext === 'zip' && parts.includes('osx')) { return 'darwin' }
   if (ext === 'zip' && parts.includes('mac')) { return 'darwin' }
   if (ext === 'zip' && parts.includes('macos')) { return 'darwin' }
+  if (ext === 'zip' && parts.includes('mas')) { return 'darwin' }
   if (ext === 'zip' && parts.includes('darwin')) { return 'darwin' }
 
   if (ext === 'rpm') { return 'linux' }
   if (ext === 'deb') { return 'linux' }
   if (ext === 'appimage') { return 'linux' }
+  if (ext === 'zip' && parts.includes('linux')) { return 'linux' }
 
   return null
 }

@@ -11,15 +11,14 @@
     "chai": "^4.1.2",
     "mocha": "^4.0.1",
     "random-useragent": "^0.3.1",
-    "standard": "^10.0.3",
-    "standard-markdown": "^4.0.2"
+    "standard": "^10.0.3"
   },
   "dependencies": {
     "ua-parser-js": "^0.7.17"
   },
   "scripts": {
     "pretest": "npm run build",
-    "test": "mocha && standard --fix && standard-markdown",
+    "test": "mocha && standard --fix",
     "build": "buble src.js > dist.js"
   },
   "standard": {
