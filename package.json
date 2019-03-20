@@ -13,7 +13,7 @@
     "random-useragent": "^0.3.1",
     "standard": "^10.0.3",
     "travis-deploy-once": "^5.0.0",
-    "semantic-release": "^15.5.2"
+    "semantic-release": "^15.13.3"
   },
   "dependencies": {
     "ua-parser-js": "^0.7.17"
