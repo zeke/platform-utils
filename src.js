@@ -34,7 +34,7 @@ function getPlatformFromUserAgent (ua) {
   // aix darwin freebsd linux openbsd sunos win32
   if (/mac/i.test(name)) return 'darwin'
   if (/windows/i.test(name)) return 'win32'
-  if (/ubuntu|linux|gentoo|centos|redhat|suse|unix/i.test(name)) return 'linux'
+  if (/ubuntu|linux|gentoo|centos|redhat|suse|unix|fedora/i.test(name)) return 'linux'
   if (/freebsd/i.test(name)) return 'freebsd'
   if (/openbsd/i.test(name)) return 'openbsd'
 

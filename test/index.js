@@ -57,6 +57,11 @@ describe('getPlatformFromUserAgent', () => {
     getPlatformFromUserAgent(ua).should.eq('linux')
   })
 
+  it('returns `linux` for Fedora', () => {
+    const ua = 'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0'
+    getPlatformFromUserAgent(ua).should.eq('linux')
+  })
+
   it('returns `win32` for Windows', () => {
     const ua = 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.71 (KHTML like Gecko) WebVideo/1.0.1.10 Version/7.0 Safari/537.71'
     getPlatformFromUserAgent(ua).should.eq('win32')
